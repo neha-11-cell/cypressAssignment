@@ -1,0 +1,173 @@
+Program 1- Write a program to calculate the average of 5 numbers.
+Answer:
+<html>
+<head>
+            <title>Average of 5 numbers entered</title>
+</head>
+<body>
+           <script>
+                  Var sum = 0;
+                  Var n;
+                   Var txt = “Average of numbers  :  “ ;
+                   For(Var i=0; i<5; i++)
+                   {
+                                n = parseInt(prompt(“Enter the number”, “0”));
+                                sum = sum + n;
+                                txt + = n + “ “ ;
+                   }
+                  Document.write(txt + “  is  <B>”  +  (sum/5)  +  “</B>”)
+                 </script>
+</body>
+</html>
+
+Program 2- Write a program to calculate the sum of 5 numbers.
+Answer:
+<html>
+<body>
+<script>
+             Var I, n=5, sum=0;
+             arr = new Array(10, 12, 13, 15, 19);
+            for(i=0;  i<5;  i++)
+                   sum = sum + arr[i];
+          document.write(sum);
+</script>
+</body>
+</html>
+
+Program 3- Write a program that accepts two strings (firstName and lastName) and print final string on the console.
+Answer:
+<html>
+<body>
+<p id = “demo”></p>
+<script>
+Const myObject = {
+             firstName : “Rahul”,
+             lastName : “Sharma”,
+             fullName : function()  {
+                         return this.firstName + “ “ + this.lastName;
+          }
+      }
+Document.getElementById(“demo”).innerHTML = myObject.fullName();
+</script>
+</body>
+</html>
+
+Program 4- Write a function that accepts interest, principle, and tenure and calculates EMI.
+Answer
+<html>
+<body>
+<script>
+Function emi_calculator(p, i, t)
+{
+     Let emi;
+     r = r / (12 * 100);
+     t = t * 12;
+     emi = (p * i * Math.power(1 + i, t )) / (Math.pow( 1 + i, t ) – 1 );
+return (emi + 0.00414);
+}
+let  principal, interest, tenure, emi ;
+principal = 10000;
+interest = 10;
+tenure = 2;
+emi = emi_caculator(principal, interest, tenure);
+document.write(“Monthly EMI Is = “ + emi.toFixed(6));
+</script>
+</body>
+</html>
+
+Program 5- Print even numbers from 0-100
+Answer 
+Let i
+Let a = 100
+Console.log(“All even numbers from 0 to 100”)
+For ( i = 0; i<=a ; i++)
+{
+     If(I % 2 == 0){ 
+           Console.log(i)
+     }
+}
+
+Program 6- Print odd numbers from 0-100
+Answer
+Let i
+Let a = 100
+Console.log(“All even numbers from 0 to 100”)
+For ( i = 0; i<=a ; i++)
+{
+     If(I % 2 !== 0){ 
+           Console.log(i)
+     }
+}
+
+Program 7- Create an array of length 5 and store below numbers 
+       1,11,111,222,555 . Write a program to calculate the average of numbers.
+Answer
+
+<Script>
+  
+          function average (a, n)
+          {
+                     Var Sum = 0;
+                      For (Var I = 0; I < n; i++) Sum + = a[i];
+                      Return parseFloat(Sum / n);
+          }
+
+          Var arr = [1, 11, 111, 222, 555];
+           Var n = arr.write(“<br>”);
+</script>
+
+
+Program 8- Write a program that creates the below Object.
+	Object name - Student
+	Property 
+		Name
+		College Name
+		Location
+		PinCode
+		Teachers details should be teacherName, teacherPhone, teacherSubjects
+
+	Print Student name, teacherName on console.
+Answer
+
+function Student (name, college_Name, location, pincode) {
+
+   // assigning  parameter values to the calling object
+    this.name = name,
+    this.college =  college_Name,
+    this.location = location,
+    this.pincode =pincode,
+
+    this.greet = function () {
+        return ('Hi' + ' ' + this.name);
+    }
+    
+}
+
+function Teacher (name, college_Name, location, pincode) {
+
+   // assigning  parameter values to the calling object
+    this.name = teacher_Name,
+    this.teacherPhone =  teacher_Phone,
+    this.teacherSubjects = teacher_Subjects,
+
+    this.greet = function () {
+        return ('Hi' + ' ' + this.name);
+    }
+    
+}
+
+
+// creating objects
+const student1 = new Student('John', 'BIT', 'pune', 442102);
+const Teacher1 = new Student('Rani', 'iPhone', 'Math');
+
+// accessing properties
+console.log(student1.name);
+console.log(Teacher1.name);
+
+
+
+
+
+
+
